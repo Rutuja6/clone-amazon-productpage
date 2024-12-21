@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Teddy Bear</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Make sure this path is correct -->
+  <style>
+    /* Custom Styles */
+    .offer-item {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .offer-item i {
+      font-size: 24px;
+      color: #ff9900;
+      margin-bottom: 8px;
+    }
+
+    .offer-item h6 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .badges .badge-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .badges .badge-item img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 8px;
+    }
+
+    .about-section {
+      margin-top: 30px;
+      border-top: 2px solid #f0f0f0;
+      padding-top: 15px;
+    }
+
+    .details-btn {
+      font-size: 16px;
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    .details-btn:hover {
+      text-decoration: underline;
+    }
+
+    /* Ratings Section */
+    .ratings {
+      display: flex;
+      align-items: center;
+    }
+    .ratings i {
+      color: gold; /* Golden color for stars */
+      font-size: 20px;
+    }
+   
+    .ratings span {
+      margin-left: 5px;
+      font-size: 18px;
+      color: #ff9900;
+    }
+
+    .ratings p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Styling for Collapsible Content */
+    .collapse.show {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Left Side: Thumbnails -->
+      <div class="col-md-2">
+        <div class="thumbnails d-flex flex-column">
+          <div class="thumbnail mb-2">
+            <img src="images/31RZLFedu0L._SS40_.jpg" alt="Thumbnail 1">
+          </div>
+          <div class="thumbnail mb-2">
+            <img src="images/41Qr5SG3kJL._SS40_.jpg" alt="Thumbnail 2">
+          </div>
+          <div class="thumbnail mb-2">
+            <img src="images/51ed+czn-qL._SS40_.jpg" alt="Thumbnail 3">
+          </div>
+          <div class="thumbnail mb-2">
+            <img src="images/412UpBAtn7L._SS40_.jpg" alt="Thumbnail 4">
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Column: Main Image -->
+      <div class="col-md-5">
+        <div class="main-image">
+          <img src="images/81A+9JEi5zL._SX522_.jpg" class="img-fluid" alt="Main Image">
+        </div>
+        <p class="text-muted mt-2 text-center">Roll over image to zoom in</p>
+      </div>
+
+      <!-- Right Column: Product Details -->
+      <div class="col-md-5">
+        <h5>Amazon Brand - Jam & Honey Teddy Bear, Cute, Soft Toy (33 Cm, Pink), Great Birthday Gift</h5>
+
+        <!-- Rating Section -->
+        <div class="ratings mt-3">
+          <div class="stars">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="far fa-star"  style="color: #FFD43B;"></i>
+          </div>
+          <span>4.0</span>
+        </div>
+        <p>Based on 150 ratings</p>
+
+        <p><span class="badge bg-danger">Limited time deal</span></p>
+        <h3 class="text-danger">₹279 <small class="text-muted"><del>₹800</del></small></h3>
+        <p class="text-success">-65%</p>
+        <p>Inclusive of all taxes</p>
+        <p>EMI starts at ₹97 per month. <a href="#">EMI options</a></p>
+
+        <!-- Offers Section -->
+        <div class="offers mt-4">
+          <h6>Offers</h6>
+          <div class="card mb-2 p-2">
+            <p>Bank Offer: Upto ₹250.00 discount on SBI Credit Cards.</p>
+          </div>
+          <div class="card p-2">
+            <p>Partner Offer: Get GST invoice and save up to 28% on business purchases.</p>
+          </div>
+        </div>
+
+        <!-- Icons with Badges -->
+        <div class="badges mt-4">
+          <div class="d-flex flex-wrap">
+            <div class="badge-item me-4">
+              <img src="images/trust_icon_free_shipping_81px._CB562549966_.png" alt="Free Delivery">
+              <span>Free Delivery</span>
+            </div>
+            <div class="badge-item me-4">
+              <img src="images/icon-returns._CB562506492_.png" alt="7 Days Replacement">
+              <span>7 Days Replacement</span>
+            </div>
+            <div class="badge-item me-4">
+              <img src="images/icon-amazon-delivered._CB562550117_.png" alt="Amazon Delivered">
+              <span>Amazon Delivered</span>
+            </div>
+            <div class="badge-item me-4">
+              <img src="images/icon-cod._CB562506657_.png" alt="Pay on Delivery">
+              <span>Pay on Delivery</span>
+            </div>
+            <div class="badge-item me-4">
+              <img src="images/icon-top-brand._CB562506657_.png" alt="Top Brand">
+              <span>Top Brand</span>
+            </div>
+            <div class="badge-item">
+              <img src="images/Secure-payment._CB650126890_.png" alt="Secure Transaction">
+              <span>Secure Transaction</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-section">
+          <h5>About this item</h5>
+          <ul>
+            <li>Item 1 description.</li>
+            <li>Item 2 description.</li>
+            <li>Item 3 description.</li>
+            <li>Item 4 description.</li>
+          </ul>
+    
+          <!-- Show More Product Details Button -->
+          <button class="details-btn" data-bs-toggle="collapse" data-bs-target="#productDetails">
+            Show More Product Details
+          </button>
+    
+          <!-- Product Details Collapse -->
+          <div class="collapse" id="productDetails">
+            <div class="card card-body mt-3">
+              <ul>
+                <li>Detailed Product Description 1</li>
+                <li>Detailed Product Description 2</li>
+                <li>Detailed Product Description 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- About This Item Section -->
+   
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Thumbnail Styles */
+  .thumbnails {
+    width: 80px;
+    margin: auto;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .thumbnail img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Main Image */
+  .main-image img {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Offers Section */
+  .offers .card {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  /* Badges Section */
+  .badges {
+    margin-top: 20px;
+  }
+  
+  .badge-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .badge-item img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
